@@ -4,6 +4,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Hosting;
 using Playground.Config;
 using Playground.DI;
+using Playground.Identity;
 using Playground.Logging;
 
 namespace Playground
@@ -18,10 +19,15 @@ namespace Playground
             // await EnvironmentConfig.Run(args);
             // await CliConfig.Run(args);
 
+            // ConfigUtils.Run();
+
             // await OperationDemo.Run(args);
 
             // LoggingDemo.Run(args);
-            ConsoleLogger.Run(args);
+            // ConsoleLogger.Run(args);
+
+            ClientCredentialFlow.Run();
+
         }
     }
 }
