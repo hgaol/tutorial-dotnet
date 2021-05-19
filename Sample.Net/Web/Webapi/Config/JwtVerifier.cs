@@ -19,9 +19,8 @@ namespace Webapi.Config
                     // ValidIssuers = OspAadConstant.ValidTenants.Select(id => OspAadConstant.AADIssuer + $"{id.Value}/"),
                     ValidAudiences = new []
                     {
-                        // "api://be9d7a2b-167f-4cdd-931e-56f0a7c7c5fb",
-                        // "api://be9d7a2b-167f-4cdd-931e-56f0a7c7c5fb/api",
-                        "api://20984d37-5817-4498-8f0b-73287c5fc974",
+                        "api://be9d7a2b-167f-4cdd-931e-56f0a7c7c5fb",
+                        // "api://20984d37-5817-4498-8f0b-73287c5fc974",
                     },
                 };
 

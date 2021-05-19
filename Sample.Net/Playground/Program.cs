@@ -4,7 +4,9 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Hosting;
 using Playground.Config;
 using Playground.DI;
+using Playground.Enum;
 using Playground.Identity;
+using Playground.Json;
 using Playground.Logging;
 
 namespace Playground
@@ -26,8 +28,13 @@ namespace Playground
             // LoggingDemo.Run(args);
             // ConsoleLogger.Run(args);
 
-            ClientCredentialFlow.Run();
+            // ClientCredentialFlow.Run();
 
+            // Json
+            // JObjectDemo.Run();
+
+            // enums
+            EnumDemo.Run();
         }
     }
 }
