@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 
@@ -38,6 +39,22 @@ namespace Webapi.Controllers
                     Summary = Summaries[rng.Next(Summaries.Length)]
                 })
                 .ToArray();
+        }
+
+        [HttpGet]
+        [Route("/api/health")]
+        public ActionResult HealthCheck()
+        {
+            // Random rand = new Random();
+            // if (rand.Next(10) > 5)
+            // {
+            return Ok();
+            // }
+            // else
+            // {
+            // return BadRequest();
+            // }
+            // throw new Exception("hello ex");
         }
     }
 }

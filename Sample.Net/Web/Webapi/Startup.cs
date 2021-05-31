@@ -21,6 +21,7 @@ namespace Webapi
         public Startup(IConfiguration configuration)
         {
             Configuration = configuration;
+            Console.WriteLine(Configuration["Position:Title"]);
         }
 
         public IConfiguration Configuration { get; }
