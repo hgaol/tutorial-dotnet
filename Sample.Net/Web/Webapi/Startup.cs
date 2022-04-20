@@ -29,7 +29,7 @@ namespace Webapi
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-
+            // CORS
             services.AddCors(options =>
             {
                 options.AddDefaultPolicy(builder =>
@@ -43,6 +43,7 @@ namespace Webapi
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "Webapi", Version = "v1" });
             });
 
+            // OAuth2.0 token
             // services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
                 // .AddJwtBearer(JwtVerifier.ConfigureOptions());
         }
@@ -61,7 +62,7 @@ namespace Webapi
 
             app.UseRouting();
 
-            // app.UseAuthentication();
+            app.UseAuthentication();
             app.UseAuthorization();
 
             app.UseHttpsRedirection();

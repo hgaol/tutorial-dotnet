@@ -11,6 +11,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Web", "Web", "{7DCE65C7-28D
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Webapi", "Web\Webapi\Webapi.csproj", "{02CBC245-A8E2-42C3-8924-94691F2F96DE}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Playground.Test", "Playground.Test\Playground.Test.csproj", "{A61C20E4-936E-414C-8C3B-96B6F733215D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -60,6 +62,18 @@ Global
 		{02CBC245-A8E2-42C3-8924-94691F2F96DE}.Release|x64.Build.0 = Release|Any CPU
 		{02CBC245-A8E2-42C3-8924-94691F2F96DE}.Release|x86.ActiveCfg = Release|Any CPU
 		{02CBC245-A8E2-42C3-8924-94691F2F96DE}.Release|x86.Build.0 = Release|Any CPU
+		{A61C20E4-936E-414C-8C3B-96B6F733215D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A61C20E4-936E-414C-8C3B-96B6F733215D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A61C20E4-936E-414C-8C3B-96B6F733215D}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{A61C20E4-936E-414C-8C3B-96B6F733215D}.Debug|x64.Build.0 = Debug|Any CPU
+		{A61C20E4-936E-414C-8C3B-96B6F733215D}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{A61C20E4-936E-414C-8C3B-96B6F733215D}.Debug|x86.Build.0 = Debug|Any CPU
+		{A61C20E4-936E-414C-8C3B-96B6F733215D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A61C20E4-936E-414C-8C3B-96B6F733215D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A61C20E4-936E-414C-8C3B-96B6F733215D}.Release|x64.ActiveCfg = Release|Any CPU
+		{A61C20E4-936E-414C-8C3B-96B6F733215D}.Release|x64.Build.0 = Release|Any CPU
+		{A61C20E4-936E-414C-8C3B-96B6F733215D}.Release|x86.ActiveCfg = Release|Any CPU
+		{A61C20E4-936E-414C-8C3B-96B6F733215D}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{02CBC245-A8E2-42C3-8924-94691F2F96DE} = {7DCE65C7-28D3-46AB-9672-8B1D44D82BD5}
