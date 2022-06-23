@@ -1,28 +1,26 @@
 using System;
 using System.Collections.Generic;
-using System.Linq;
 using System.Net.Http;
 using System.Threading.Tasks;
-using Microsoft.VisualStudio.TestTools.UnitTesting;
+using Xunit;
 
 namespace Playground.Test.Http
 {
-    [TestClass]
     public class HttpClientTest
     {
         private HttpClient client;
 
-        private string[] uris = new[] { "https://example.com", "https://www.baidu.com", "https://localhost:5001/test/hello" };
+        private string[] uris = new[] { "https://example.com", "https://www.baidu.com" };
 
-        [TestInitialize]
         public void init()
         {
             client = new HttpClient();
         }
 
-        [TestMethod]
+        // [Fact]
         public async Task HttpInstanceTest()
         {
+            init();
             List<Task<HttpResponseMessage>> rets = new List<Task<HttpResponseMessage>>();
             for (int i = 0; i < uris.Length; i++)
             {

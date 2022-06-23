@@ -2,18 +2,17 @@ using System;
 using System.Collections.Generic;
 using System.Threading;
 using System.Threading.Tasks;
-using Microsoft.VisualStudio.TestTools.UnitTesting;
+using Xunit;
 
 namespace Playground.Test.Concurrent.Tasks
 {
-    [TestClass]
     public class TaskTest
     {
-        [TestMethod]
+        [Fact]
         public async Task TestWhenAll()
         {
             List<Task<int>> ret = new List<Task<int>>();
-            for (int i = 0; i < 100; i++)
+            for (int i = 0; i < 5; i++)
             {
                 var task = Task.Run(() => LongRunMethod());
                 ret.Add(task);

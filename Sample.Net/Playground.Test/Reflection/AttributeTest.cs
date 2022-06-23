@@ -1,13 +1,12 @@
 using System.Linq;
 using System.Reflection;
-using Microsoft.VisualStudio.TestTools.UnitTesting;
+using Xunit;
 
 namespace Playground.Test.Reflection
 {
-    [TestClass]
     public class AttributeTest
     {
-        [TestMethod]
+        [Fact]
         public void Test1()
         {
             var type = typeof(People);
