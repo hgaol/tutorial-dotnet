@@ -27,7 +27,6 @@ namespace Playground.Test.ZK
                 Console.WriteLine("连接失败：" + state);
                 return null;
             }
-            
             return zk;
         }
         
