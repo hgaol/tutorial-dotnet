@@ -45,8 +45,11 @@ jobs:
       - name: Merging test results
         run: reportgenerator -reports:./Sample.Net/TestResults/**/*.xml -targetdir:TestResults -reporttypes:Cobertura
 
-      - uses: codecov/codecov-action@v2
-        with:
-          files: ./TestResults/Cobertura.xml
-          fail_ci_if_error: true
-          name: code-coverage
+      - name: Coverage
+        run: bash <(curl -s https://codecov.io/bash)
+
+      # - uses: codecov/codecov-action@v2
+      #   with:
+      #     files: ./TestResults/Cobertura.xml
+      #     fail_ci_if_error: true
+      # name: code-coverage
